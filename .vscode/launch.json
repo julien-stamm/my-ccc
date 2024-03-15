@@ -5,7 +5,7 @@
       "name": "C++: Debug active file (gdb)",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "program": "${workspaceFolder}/build/${relativeFileDirname}/${fileBasenameNoExtension}",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
