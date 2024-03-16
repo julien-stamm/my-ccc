@@ -8,15 +8,19 @@ int main() {
         short operating_number;
 
         void insert_after(Element* new_element) {
-            new_element->next = next;
-            new_element->next->previous == new_element;
+            if (next != 0x0) {
+                next->previous = new_element;
+                new_element->next = next;
+            }
             new_element->previous = this;
             next = new_element;
         }
 
         void insert_before(Element* new_element) {
-            new_element->previous = previous;
-            new_element->previous->next = new_element;
+            if (previous != 0x0) {
+                previous->next = new_element;
+                new_element->previous = previous;
+            }
             new_element->next = this;
             previous = new_element;
         }
