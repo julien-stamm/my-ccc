@@ -4,6 +4,7 @@
     "iterator": "cpp",
     "random": "cpp",
     "limits": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "cstdio": "cpp"
   }
 }
